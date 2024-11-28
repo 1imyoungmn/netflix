@@ -1,0 +1,150 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0;
+}
+
+.wrap{
+    position:fixed;
+    width:100%;
+    height:100%;
+    min-width:1024px;
+    min-height:768px;
+    background-size:cover;
+    background:url(../images/bg.jpg)no-repeat;
+    background-size:cover;
+    
+}
+.wrap::before
+.wrap h1{
+    position:fixed;
+    top:50px;
+    left:50px;
+}
+.wrap h1 img{
+    width:150px;
+    height:auto;
+}
+
+section{
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+}
+
+article{
+    position:relative;
+    width:12%;
+    height:100%;
+    float:right;
+    overflow:hidden;
+    border-left:1px solid #d9232e;
+}
+
+article h2{
+    position:absolute;
+    top:170px;
+    left:20px;
+    padding-left:15px;
+    border-left:3px solid #d9232e;
+    font-weight: bold;
+    font-size:20px;
+    color:#eaeaea;
+    z-index:3;
+    transition: all .4s;
+}
+
+article div{
+    position: absolute;
+    left:0;
+    top:170px;
+    width:100%;
+    height:0;
+    background:#666;
+    opacity:.3;
+    z-index:2;
+    transition:all .4s;
+}
+
+article:hover h2{
+    color:#d9232e;
+    border-left:3px solid #fff;
+}
+article:hover div{
+    top:150px;
+    height:70px;
+}
+
+article video{
+    position: absolute;
+    width:auto;
+    height:100%;
+    margin-top:0;
+    margin-left:-400px;
+    opacity:0;
+    z-index:1;
+}
+article h3{
+    position: absolute;
+    bottom:180px;
+    text-align: right;
+    right:-500px;
+    color:#d9232e;
+    opacity:1;
+    z-index:4;
+    font-size:30px;
+}
+article p{
+    position:absolute;
+    top:780px;
+    text-align: right;
+    right:-400px;
+    color:#fff;
+    opacity:.8s;
+    z-index:5;
+    font-size:16px;
+    width:300px;
+    height:150px;
+}
+footer{
+    position:fixed;
+    width:100%;
+    height:40px;
+    left:0px;
+    bottom:0;
+    background:#d6414b;
+    font-size:13px;
+    color:#eaeaea;
+    z-index:10;
+}
+footer ul{
+    position: absolute;
+    bottom:10px;
+    left:50px;
+}
+footer ul li{
+    float:left;
+    margin-right:40px;
+}
+footer li a{
+    color:#eaeaea;
+}
+footer i{
+    font-size:20px;
+}
+footer span{
+    position: absolute;
+    right:50px;
+    bottom:10px;
+}
